@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotal Booking Forms</title>
+    <link rel="stylesheet" href="hotal booking form.css">
+</head>
+
+     <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(182, 182, 182);
+}
+.form-contaner{
+    background-color: rgb(248, 237, 87);
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px whitesmoke;
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 0px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid orange;
+}
+form h2{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: rgb(4, 131, 110);
+}
+form button{
+    padding: 10px;
+    background-color: rgb(248, 173, 35);
+    border: solid 2px white;
+    outline: none;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.date input{
+    width: 50%;
+}
+.date select{
+    padding: 10px;
+    margin-bottom: 12px;
+    outline: none;
+    border:solid 2px orange;
+    border-radius: 5px;
+    width: 50%;
+}
+#women, #child{
+    width: 100%;
+}
+
+     </style>
+
+<body>
+    <div class="form-contaner">
+        <form action="">
+            <h2>Hotal Booking Form</h2>
+
+            <input type="text" placeholder="Enter Your Name">
+
+            <div>
+                <input type="email" placeholder="Enter Your E-mail">
+                <input type="tel" placeholder="Enter Your Phone no">
+            </div>
+
+            <div>
+                <input type="text" placeholder="Enter Your City">
+                <input type="text" placeholder="Enter Your State">
+            </div>
+
+            <div>
+                <input type="number" placeholder="Enter Your Pin Code">
+                <input type="text" placeholder="Enter Your Country">
+            </div>
+
+            <div class="date">
+                <input type="date" placeholder="">
+                <input type="date" placeholder="">
+            </div>
+
+            <div class="date">
+                <input type="text" placeholder="Number of Person">
+                <select name="" id="">
+                    <option value="mail">Mail</option>
+                    <option value="mail">1</option>
+                    <option value="mail">2</option>
+                    <option value="mail">3</option>
+                    <option value="mail">4</option>
+                    <option value="mail">5</option>
+                </select>
+            </div>
+            <div class="date" id="women">
+                <select name="" id="">
+                    <option value="Fe-Mail">Fe-Mail</option>
+                    <option value="Fe-Mail">1</option>
+                    <option value="Fe-Mail">2</option>
+                    <option value="Fe-Mail">3</option>
+                    <option value="Fe-Mail">4</option>
+                    <option value="Fe-Mail">5</option>
+                </select>\
+                <select name="" id="">
+                    <option value="Fe-Mail">Kids</option>
+                    <option value="Fe-Mail">1</option>
+                    <option value="Fe-Mail">2</option>
+                    <option value="Fe-Mail">3</option>
+                    <option value="Fe-Mail">4</option>
+                    <option value="Fe-Mail">5</option>
+                </select>
+            </div>
+            <input type="text" placeholder="Enter Your Address">
+            <button type="submit">Order Now</button>
+        </form>
+    </div>
+</body>
+</html>
